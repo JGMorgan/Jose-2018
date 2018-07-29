@@ -12,4 +12,4 @@ Send a public key to the server by running `node client/client.js storeKey -p PA
 
 Sign a message by running `node client/client.js signMessage -m MESSAGE -k FILE_PATH`. Just as the previous command the private key needs to be provided in a file. This command will print out the signature it will not send it to the server. I did this because I figured you would want to send the message separate so you can manipulate the message and signature to try to break the server.
 
-Send a signed message to the server by running `node client/client.js verifySignature -m MESSAGE -s SIGNATURE`. The message won't be stored on the server this just checks if the signature matches the message.
+Send a signed message to the server by running `node client/client.js verifySignature -m MESSAGE -s SIGNATURE`. The message won't be stored on the server this just checks if the signature matches the message. For the sake of simplicity I assumed `sha256` is the only hash algorithm that will be used for the signature.
