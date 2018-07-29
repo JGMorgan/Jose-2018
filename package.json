@@ -1,0 +1,11 @@
+{
+  "name": "Jose-2018",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node server/controller.js"
+  },
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "express": "^4.16.3"
+  }
+}
